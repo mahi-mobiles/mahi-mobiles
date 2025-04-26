@@ -4,6 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahi Mobiles</title>
   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background-color: darkorange; padding: 20px; text-align: center; color: white; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
@@ -17,15 +22,16 @@
     footer { background: #333; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
-<body><header style="display: flex; align-items: center; padding: 10px 20px; background-color: darkorange;">
-  <img src="logo.png" alt="Mahi Mobiles Logo" style="height:80px; margin-right: 20px;">
-  <h1 style="margin: 0; color: white;">Mahi Mobiles</h1>
-  <nav style="margin-left: auto;">
-    <a href="#accessories">Shop Accessories</a>
-    <a href="#pickup">Request Pickup</a>
-    <a href="#contact">Contact</a>
+<body><header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: darkorange; position: fixed; top: 0; width: 100%; z-index: 1000; box-sizing: border-box;">
+  <div style="display: flex; align-items: center;">
+    <img src="logo.png" alt="Mahi Mobiles Logo" style="height:50px; margin-right: 10px;">
+    <h1 style="margin: 0; font-size: 20px; color: white;">Mahi Mobiles</h1>
+  </div>
+  <nav style="display: flex; gap: 10px;">
+    <a href=\"#accessories\" style=\"color: white; text-decoration: none; font-size: 14px;\">Shop</a>\n    <a href=\"#pickup\" style=\"color: white; text-decoration: none; font-size: 14px;\">Pickup</a>\n    <a href=\"#contact\" style=\"color: white; text-decoration: none; font-size: 14px;\">Contact</a>
   </nav>
 </header>
+
   <h2>Welcome to Mahi Mobiles</h2>
   <p>Your One-Stop Shop for Mobile Accessories & Repairs!</p>
 </section><section class="section">
