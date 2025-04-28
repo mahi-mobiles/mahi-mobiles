@@ -9,12 +9,30 @@
     body { font-family: Arial, sans-serif; }
     .navbar { background-color: darkorange; }
     .navbar-brand, .nav-link { color: white !important; }
-    .footer { background: #333; color: white; padding: 20px; text-align: center; }
+    .hero-section {
+      background: url('https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg') repeat-x center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 2rem;
+      font-weight: bold;
+      animation: slideBackground 30s linear infinite;
+    }
+    @keyframes slideBackground {
+      0% { background-position: 0 0; }
+      100% { background-position: -1000px 0; }
+    }
+    .footer { background: #333; color: white; padding: 20px; }
+    .footer a { color: white; }
     .float-phone, .circlewhatsapp {
       position: fixed; bottom: 20px; width: 60px; height: 60px; text-align: center; border-radius: 50%; color: white; font-size: 30px; z-index: 1000;
     }
     .float-phone { right: 90px; background: #28a745; }
     .circlewhatsapp { right: 20px; background: #25D366; }
+    .social-icons img { width: 30px; margin: 5px; }
   </style>
 </head>
 <body>
@@ -36,19 +54,59 @@
   </div>
 </nav>
 
-<section class="container mt-5">
-  <h1>Our Services</h1>
+<!-- Hero Section -->
+<section class="hero-section fade-in">
+  Any Smartphone Problems?
+</section>
+
+<!-- Services Section -->
+<section class="container mt-5 fade-in">
+  <h2 class="text-center mb-4">OUR SERVICES</h2>
+  <p>We offer a comprehensive range of services, including:</p>
   <ul>
-    <li>Mobile Accessories Sales — Latest models, fast delivery.</li>
-    <li>Phone Repairs Pickup — We pick your device, repair and deliver it back.</li>
-    <li>Screen Replacement — Pickup ➔ Replace ➔ Deliver safely.</li>
+    <li><strong>Screen Repair:</strong> Cracked or shattered screens are no match for our expertise. We'll have your device looking brand new.</li>
+    <li><strong>Front Broken Glass Replacement:</strong> Restore your device’s aesthetics and functionality with us.</li>
+    <li><strong>Back Glass Repair:</strong> We can repair or replace damaged back glass to maintain your device’s integrity.</li>
+    <li><strong>Battery Repair:</strong> Battery issues? We'll replace it with a high-quality, long-lasting battery.</li>
+    <li><strong>Charging Port Repair:</strong> Problems charging? We'll make it like new again.</li>
+  </ul>
+
+  <h3 class="mt-4">Specialized Services</h3>
+  <p>We specialize in services like Apple Watch front glass replacement and curved screen front glass replacement. Our technicians are well-trained and equipped to ensure that your mobile device looks and functions like new.</p>
+
+  <h3 class="mt-4">Why Choose Us?</h3>
+  <ul>
+    <li><strong>Convenience:</strong> We come to you! No need to travel to a repair shop.</li>
+    <li><strong>Speed:</strong> Most repairs are completed in just 30 minutes.</li>
+    <li><strong>Quality:</strong> We use high-quality parts and the latest techniques.</li>
+    <li><strong>Experienced Team:</strong> Over seven years of experience handling all mobile issues.</li>
+    <li><strong>Transparency:</strong> Transparent pricing with clear quotes before repair work.</li>
+    <li><strong>Customer Satisfaction:</strong> Exceeding customer expectations is our priority!</li>
   </ul>
 </section>
 
-<footer class="footer">
-  <p>© 2025 Mahi Mobiles</p>
+<!-- Footer Section -->
+<footer class="footer text-center mt-5">
+  <div class="container">
+    <p><strong>Location:</strong> SJP Road, opp. dasappa hospital, near TOWN HALL, Dodpete, Nagarathpete, Bengaluru - 560002, Karnataka</p>
+
+    <p><strong>Quick Links</strong></p>
+    <p><a href="about.html">About Us</a> | <a href="#">Reviews</a> | <a href="contact.html">Contact</a></p>
+
+    <p><strong>More Info</strong></p>
+    <p>Terms & Condition | Privacy Policy | Warranty Policy | Cookie Policy | Refund Policy</p>
+
+    <p><strong>Follow Us</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mahimobiles_official/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+    <p>Mahi Mobiles - Services</p>
+  </div>
 </footer>
 
+<!-- Floating Call and WhatsApp Buttons -->
 <a href="tel:+919676045054" class="float-phone" title="Call Now"><i class="fa fa-phone"></i></a>
 <a href="https://api.whatsapp.com/send?phone=919676045054" class="circlewhatsapp" title="Chat on WhatsApp"><i class="fa fa-whatsapp"></i></a>
 
